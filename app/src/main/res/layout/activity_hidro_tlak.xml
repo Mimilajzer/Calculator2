@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/plava"
+    tools:context="hr.vvg.calculator.HidroTlak">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+
+        <TextView
+            android:id="@+id/textViewVolumen"
+            android:layout_width="60dp"
+            android:layout_height="15dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:text="Volumen" />
+
+        <TextView
+            android:id="@+id/textViewMasa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textViewVolumen"
+            android:layout_alignBottom="@+id/textViewVolumen"
+            android:layout_marginStart="58dp"
+            android:layout_toEndOf="@+id/textViewVolumen"
+            android:text="Masa" />
+
+        <TextView
+            android:id="@+id/textViewVisina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textViewMasa"
+            android:layout_alignBottom="@+id/textViewMasa"
+            android:layout_marginStart="48dp"
+            android:layout_toEndOf="@+id/textViewMasa"
+            android:text="Visina posude" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <EditText
+            android:id="@+id/eTvolumen"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_alignStart="@+id/eTmasa"
+            android:layout_below="@+id/eTmasa"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:textAlignment="center"
+            android:inputType="number"
+             />
+
+        <TextView
+            android:id="@+id/textViewM3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:text="m3" />
+
+
+        <EditText
+            android:id="@+id/eTmasa"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_alignStart="@+id/eTgustoca"
+            android:layout_below="@+id/eTgustoca"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:textAlignment="center"
+            android:inputType="number"
+             />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_toEndOf="@+id/eTmasa"
+            android:text="kg" />
+
+        <EditText
+            android:id="@+id/eTvisina"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_alignEnd="@+id/eTgustoca"
+            android:layout_below="@+id/eTgustoca"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:textAlignment="center"
+            android:inputType="number"
+             />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/eTvisina"
+            android:layout_alignStart="@+id/textView2"
+            android:text="m" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <Button
+            android:id="@+id/buttonIzracunaj"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:onClick="blabla"
+            android:text="Izracunaj" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+
+
+        <TextView
+            android:id="@+id/textViewGustoca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:text="Gustoca" />
+
+        <TextView
+            android:id="@+id/textViewHidroTlak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textViewGustoca"
+            android:layout_alignBottom="@+id/textViewGustoca"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="100dp"
+            android:text="Hidrostatički tlak" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+
+        <EditText
+            android:id="@+id/eTgustoca"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignStart="@+id/eTtlak"
+            android:layout_below="@+id/eTtlak"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:textAlignment="center"
+            android:inputType="none"
+            android:focusable="false"
+             />
+
+        <TextView
+            android:id="@+id/textViewKgM3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/eTgustoca"
+            android:layout_alignBottom="@+id/eTgustoca"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@+id/eTgustoca"
+            android:text="kg/m3" />
+
+
+        <EditText
+            android:id="@+id/eThidroTlak"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignStart="@+id/eTgustoca"
+            android:layout_below="@+id/eTgustoca"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:textAlignment="center"
+            android:inputType="none"
+            android:focusable="false"
+            />
+
+        <TextView
+            android:id="@+id/textViewPa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Pa" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

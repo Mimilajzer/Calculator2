@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="hr.vvg.calculator.MainActivity"
+    android:background="@drawable/zuta"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <TextView
+            android:id="@+id/textViewMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="20dp"
+            android:fontFamily="casual"
+            android:textSize="30dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Izaberi kalkulator" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+
+        <TextView
+            android:id="@+id/textViewGustoca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="33dp"
+            android:textSize="20dp"
+            android:textColor="@color/colorAccent"
+            android:text="Gustoca" />
+
+        <TextView
+            android:id="@+id/textViewMegabajti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textViewGustoca"
+            android:layout_alignBottom="@+id/textViewGustoca"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="44dp"
+            android:text="Megabajti"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="352dp"
+        android:layout_height="91dp">
+
+
+        <ImageButton
+            android:id="@+id/ImagerButtonHidroTlak"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            app:srcCompat="@drawable/index"
+            android:onClick="toHidroTlak"/>
+
+        <ImageButton
+            android:id="@+id/ImagerButtonMegabajti"
+            android:layout_width="100dp"
+            android:layout_height="98dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="63dp"
+            android:onClick="toMegabajti"
+            app:srcCompat="@drawable/images" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
